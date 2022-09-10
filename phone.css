@@ -1,0 +1,112 @@
+/* navigation section  */
+#navbar {
+  flex-direction: column;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 11px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#logo {
+  margin: 0;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home section  */
+#home {
+  height: 278px;
+  /* padding: 3px 68px; */
+}
+#home::before {
+  height: 430px;
+}
+#home p {
+  font-size: 0.8rem;
+}
+#home h1 {
+  font-size: 1rem;
+}
+#home input {
+  margin-top: 10px;
+  height: 1.9rem;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0px 30px;
+}
+.btn {
+  padding: 3px 10px;
+  background-color: rgba(58, 58, 255, 0.945);
+  border: 2px solid black;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  font-size: 1rem;
+}
+/* services section  */
+#services {
+  flex-direction: column;
+}
+#services-2 {
+  flex-direction: column;
+}
+#services-2 .box {
+  border: 2px solid brown;
+  padding: 20px;
+  margin: 5px 7px;
+  background: #f2f2ff;
+  border-radius: 25px;
+}
+#services-2 #box3 {
+  border: 2px solid brown;
+  padding: 9px;
+  margin: 5px 7px;
+  background: #f2f2ff;
+  border-radius: 25px;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 20px;
+  margin: 5px 7px;
+  background: #f2f2ff;
+  border-radius: 25px;
+}
+.services-container {
+  margin-top: 25px;
+}
+
+/* client section  */
+#clients {
+  flex-wrap: wrap;
+}
+/* contact us section  */
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+#contact-box label {
+  font-size: 1rem;
+}
