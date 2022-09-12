@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,200&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+#headersec1 {
+  position: sticky;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 65px;
+  width: 100px;
+  margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* home section  */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+#home::before {
+  content: "";
+  background: url("images/spaghetti-1932466_1920.jpg");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+#home h1 {
+  color: #ebeeee;
+  text-align: center;
+  font-family: "Fjalla One", sans-serif;
+}
+
+#home p {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-family: "Baloo Bhai", cursive;
+}
+
+.main-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* utility classes  */
+.h-primary {
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  font-family: "Baloo Bhai", cursive;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  background-color: rgba(58, 58, 255, 0.945);
+  border: 2px solid black;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  font-size: 1.2rem;
+}
+
+/* services section  */
+#services {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 5px 7px;
+  background: #f2f2ff;
+  border-radius: 25px;
+}
+
+#services .box img {
+  height: 200px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.main-container input {
+  margin-top: 10px;
+  height: 2.9rem;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 0px 30px;
+}
+
+.main-container img {
+  position: absolute;
+  left: 25%;
+  top: 70%;
+  width: 30px;
+}
+
+#services .box p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#services-2 {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services-2 .box {
+  border: 2px solid brown;
+  padding: 30px;
+  margin: 5px 7px;
+  background: #f2f2ff;
+  border-radius: 25px;
+}
+
+#services-2 .box img {
+  height: 200px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clients-item img {
+  width: 250px;
+  height: 200px;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-item {
+  padding: 30px;
+}
+
+#client-section {
+  /* height: 350px; */
+  position: relative;
+}
+
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("images/vegetables-752153_1920.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+/* contact section  */
+#contact {
+  position: relative;
+  margin-top: 10px;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.9;
+  background: url("images/eat-2834549_1920.jpg") no-repeat center center/cover;
+}
+
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.5rem;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+/* footer section  */
+footer {
+  margin-top: 10px;
+  height: 100px;
+  /* background: red; */
+  opacity: 0.8;
+}
+
+.site-foo {
+  color: blue;
+  cursor: pointer;
+}
+
+.site-foo:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.submit #hii {
+  background: green;
+  border-radius: 10px;
+  margin-left: 275px;
+  font-size: larger;
+}
+
+#hii {
+  padding: 5px;
+}
